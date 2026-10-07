@@ -299,28 +299,29 @@ FOOTER
 footer {
   background-color: #242424;
   display: flex;
-  padding: 6% 0;
+  padding: 60px 0;
 }
 
 .footer__row {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
 .footer__log--img {
   width: 70px;
-  /* height: 70px; */
+  height: 70px;
 }
 .footer__social--list {
   width: 100%;
   display: flex;
   max-width: 500px;
   justify-content: space-around;
-  margin-bottom: 28px 0;
+  margin-bottom: 20px 0;
 }
 
 .footer__social--link, 
-.footer_copyright {
+.footer__copyright {
   color: white;
 }
