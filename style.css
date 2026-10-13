@@ -59,7 +59,7 @@ input:hover, textarea {
 }
 
 input:focus, textarea:focus {
-  border>-color: #f06449;
+  border-color: #f06449;
 }
 
 .container {
@@ -358,6 +358,7 @@ transform: scale(1);
   border-color: #fff;
   background-color: transparent;
 }
+
 .form__submit:active {
  border-color: #f06449;
  color: #f06449;
@@ -380,7 +381,7 @@ transform: scale(1);
   z-index: -1;
 }
 
-.modal__overalay--succuss {
+.modal__overlay--succuss {
   background-color: #4bb543;
   font-size: 40px;
   font-weight: 700;
