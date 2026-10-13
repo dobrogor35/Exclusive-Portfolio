@@ -388,6 +388,7 @@ transform: scale(1);
   text-align: center;
   padding: 208px;
 }
+
 .fa-spinner {
   animation: spinner 750ms infinite linear;
 }
