@@ -93,9 +93,33 @@
     </div>
 
     <div class="modal__half modal__contact">
-      <h3>Let's have a chat</h3>
-  
+      <h3 class="modal__title modal__title--contact">Let's have a chat!</h3>
+      <h4 class="modal__sub-title modal__sub-title--contact">Let's have a chat! I/m currently open to new oppurtunities</h4>
+  <form action id="contact__form">
+    <div class="form__item">
+      <label class="form__item--label">Name</label>
+      <input  class="input" name="user__name" type="text" required></input>
     </div>
+    <div class="form__item">
+      <label class="form__item--label">Email</label>
+      <input  class="input" name="user__email" type="email" required></input>
+    </div>
+    <div class="form__item">
+      <label class="form__item--label">Message</label>
+      <textarea  class="input" name="message" type="text" required></textarea>
+    </div>
+    <button id="contact__submit"  class="form__submit">
+      Send it my way
+    </button>
+  </form>
+  <div class="modal__overlay modal__overlay--loading">
+    <i class="fas fa-spinner"></i>
+  </div>
+<div class="modal__overalay modal__overlay--success">
+    Thanks for the message! Looking forward speaking to you soon
+</div>
+    </div>
+    <i class="fas fa--times modal__exit click"></i>
     </div>
   </section>
 
@@ -164,7 +188,7 @@
       </div>
     </div> 
     </footer>
-  </section>
+  
 </body>
 </html>
 
