@@ -9,8 +9,20 @@
   rel="stylesheet"
   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
 />
- <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+<script src="index.js"></script>
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@5/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "q8kgPOxBe9_ap9zcS",
+      });
+   })();
+</script>
 </head>
+
 <body>
   <section class="landing-page">
     <nav>
@@ -74,19 +86,19 @@
   
     <div class="modal__languages">
       <figure class="modal__language">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYP0xU93qjppsqQRqW_kRNMhq1v6xqi7xSZ5vKLcRvSw&s=10" alt="">
+        <img class="modal__language--img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYP0xU93qjppsqQRqW_kRNMhq1v6xqi7xSZ5vKLcRvSw&s=10" alt="">
           <span class="language__name"></span>
       </figure>
       <figure class="modal__language">
         <img class="modal__language--img"  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYP0xU93qjppsqQRqW_kRNMhq1v6xqi7xSZ5vKLcRvSw&s=10" alt="">
         <span class="language__name"></span>
       </figure>
-      <figure>
+      <figure class="modal__language">
         <img class="modal__language--img"  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYP0xU93qjppsqQRqW_kRNMhq1v6xqi7xSZ5vKLcRvSw&s=10" alt="">
           <span class="language__name"></span>
       </figure >
-      <figure>
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYP0xU93qjppsqQRqW_kRNMhq1v6xqi7xSZ5vKLcRvSw&s=10" alt="">
+      <figure class="modal__language">
+        <img class="modal__language--img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYP0xU93qjppsqQRqW_kRNMhq1v6xqi7xSZ5vKLcRvSw&s=10" alt="">
           <span class="language__name"></span>
       </figure>
     </div>
@@ -98,28 +110,27 @@
   <form id="contact__form" onsubmit="contact(event)">
     <div class="form__item">
       <label class="form__item--label">Name</label>
-      <input  class="input" name="user__name" type="text" required></input>
+      <input  class="input" name="user__name" type="text"></input>
     </div>
     <div class="form__item">
       <label class="form__item--label">Email</label>
-      <input  class="input" name="user__email" type="email" required></input>
+      <input  class="input" name="user__email" type="email"></input>
     </div>
     <div class="form__item">
       <label class="form__item--label">Message</label>
-      <textarea  class="input" name="message" type="text" required></textarea>
+      <textarea  class="input" name="message" type="text"></textarea>
     </div>
-    <button id="contact__submit"  class="form__submit">
-      Send it my way
+    <button id="contact__submit" class="form__submit"> Send Message
     </button>
   </form>
   <div class="modal__overlay modal__overlay--loading">
-    <i class="fas fa-spinner"></i>
+    <i class="fa-solid fa-spinner"></i>
   </div>
 <div class="modal__overlay modal__overlay--success">
     Thanks for the message! Looking forward speaking to you soon
 </div>
     </div>
-    <i class="fas fa--times modal__exit click"></i>
+    <i class="fas fa-times modal__exit click"></i>
     </div>
   </section>
 

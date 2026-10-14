@@ -373,6 +373,7 @@ transform: scale(1);
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: -1;
 }
 
 .modal__overlay--loading {
@@ -381,19 +382,23 @@ transform: scale(1);
   z-index: -1;
 }
 
-.modal__overlay--succuss {
+.modal__overlay--success {
   background-color: #4bb543;
   font-size: 40px;
   font-weight: 700;
   text-align: center;
-  padding: 208px;
+  padding: 28px;
+}
+
+.modal__overaly--visible {
+  z-index: 1;
 }
 
 .fa-spinner {
   animation: spinner 750ms infinite linear;
 }
 
-#keyframes  spinner {
+@keyframes  spinner {
   0% {
     transform: rotate(0);
   }
