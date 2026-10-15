@@ -62,10 +62,12 @@ input:focus, textarea:focus {
   border-color: #f06449;
 }
 
+
 .container {
   padding: 50px 0;
   width: 100%;
 }
+
 
 .row {
   width: 100%;
@@ -99,6 +101,51 @@ input:focus, textarea:focus {
 .title--secondary,
 .orange {
   color: #f06449 !important;
+}
+
+
+.link__hover-effect {
+  position: relative;
+}
+
+.link__hover-effect:after {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  height: 3px;
+  width: 0;
+  right: 0;
+  transtion: all 300ms ease;
+
+}
+
+.link__hover-effect--white:after {
+  background-color: #fff;
+}
+
+.link__hover-effect--black:after {
+  background-color: #242424;
+}
+
+.link__hover-effect:hover:after {
+  left: 0;
+  width: 100%;
+}
+
+.nav, 
+.scroll,
+.header {
+  opacity: 1;
+  visibility: visible;
+  transition: all 400ms 800ms;
+}
+
+.modal--open .nav, 
+.modal--open .scroll,
+.modal--open .header {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 400ms; 
 }
 
 /* 
@@ -261,11 +308,20 @@ MODAL
   width: 90%;
   max-width: 1100px;
   height: 700px;
-  box-shadow: 0 20px 80px 0 rgb(0, 0, 0, 0.55);
   border-radius: 20px;
   overflow: hidden;
   display: flex;
+  visibility: hidden;
+  z-index: -1;
+  transition: visibility 1s, z-index, 1s, box-shadow 0.5s ease;
 }
+
+.modal--open, .modal {
+  z-index: 60;
+  box-shadow: 0 20px 80px 0 rgb(0, 0, 0, 0.55);
+  visibility: visible;
+}
+
 
 .modal__half {
   width: 50%;
@@ -274,10 +330,17 @@ MODAL
   flex-direction: column;
   justify-content: center;
   position: relative;
+  transition: all 300ms ease-in;
+}
+
+.modal__open, .modal__about
+.modal__open, .modal__contact {
+  transform: translateX()0%;
 }
 
 .modal__about {
   background-color: rgb(245, 245, 245);
+  transform: translateX(-110%);
 }
 
 
@@ -320,7 +383,8 @@ transform: scale(1);
 
 .modal__contact {
   background-color: #242424;
-  color: white;
+ color: white;
+ transform: translateX(110%);
 }
 
 .modal__title {
@@ -370,7 +434,7 @@ transform: scale(1);
   left: 0;
   width: 100%;
   height: 100%;
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
   z-index: -1;
@@ -390,8 +454,9 @@ transform: scale(1);
   padding: 28px;
 }
 
-.modal__overaly--visible {
+.modal__overlay--visible {
   z-index: 1;
+  display: flex ;
 }
 
 .fa-spinner {
