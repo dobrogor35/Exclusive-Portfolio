@@ -48,13 +48,11 @@ function contact(event) {
   // }, 1000); 
  
 }
-let isModalOpen = false; 
+
 function toggleModal() {
-   isModalOpen = !isModalOpen;
   if (isModalOpen) {
     isModalOpen = false;
     return document.body.classList.remove("modal--open");
-  console.log("Modal clicked!");
   }
 
   isModalOpen = true;
