@@ -335,7 +335,7 @@ MODAL
 
 .modal__open .modal__about
 .modal__open .modal__contact {
-  transform: translateX()0%;
+  transform: translateX(0%);
 }
 
 .modal__about {

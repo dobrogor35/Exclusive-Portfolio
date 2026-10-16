@@ -48,7 +48,7 @@ function contact(event) {
   // }, 1000); 
  
 }
-
+let isModalOpen = false
 function toggleModal() {
   if (isModalOpen) {
     isModalOpen = false;
