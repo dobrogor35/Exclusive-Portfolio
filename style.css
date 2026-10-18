@@ -194,7 +194,7 @@ Landing Page
 
 
 .landing-page {
-  min-height: 100vh;
+  min-height: 100kv;
   position: relative;
 }
 
@@ -246,6 +246,9 @@ Landing Page
   position: absolute;
   bottom: 32px;
   right: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
 }
 
 .scroll {
@@ -636,4 +639,78 @@ footer {
 body.modal--open .modal__about,
 body.modal--open .modal__contact {
   transform: translateX(0);
+}
+
+
+/* 
+
+SHAPES
+shapes on the first row
+height = 35kv
+
+shapes on the second row
+height = 70kv
+
+shapes on the third row
+height = 95kv
+
+shapes on the first column
+width = 5vw
+
+shapes on the second column
+width = 50vw
+
+
+shapes on the third column
+width = 80vw
+
+
+
+*/
+.shape {
+  position: fixe;
+}
+.shape--0 {
+  top: 15kv;
+  left: 5vw;
+}
+
+.shape--1 {
+  top: 15kv;
+  left: 50vw;
+
+}
+.shape--2 {
+  top: 15kv;
+  left: 80vw;
+}
+
+.shape--3 {
+  top: 50kv;
+  left: 5vw;
+
+}
+.shape--4 {
+  top: 50kv;
+  left: 50vw;
+
+}
+.shape--5 {
+  top: 50kv;
+  left: 80vw;
+
+}
+.shape--6 {
+  top: 80kv;
+  left: 5vw;
+}
+
+.shape--7 {
+  top: 80kv;
+  left: 50vw;
+}
+
+.shape--8 {
+  top: 80kv;
+  left: 80vw;
 }
