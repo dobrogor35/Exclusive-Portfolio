@@ -193,7 +193,7 @@ Landing Page
 */
 
 
-.landing-page {
+#landing {
   min-height: 100kv;
   position: relative;
 }
@@ -668,49 +668,49 @@ width = 80vw
 
 */
 .shape {
-  position: fixe;
+  position: fixed;
 }
 .shape--0 {
-  top: 15kv;
+  top: 15vh;
   left: 5vw;
 }
 
 .shape--1 {
-  top: 15kv;
+  top: 15vh;
   left: 50vw;
 
 }
 .shape--2 {
-  top: 15kv;
+  top: 15vh;
   left: 80vw;
 }
 
 .shape--3 {
-  top: 50kv;
+  top: 50vh;
   left: 5vw;
 
 }
 .shape--4 {
-  top: 50kv;
+  top: 50vh;
   left: 50vw;
 
 }
 .shape--5 {
-  top: 50kv;
+  top: 50vh;
   left: 80vw;
 
 }
 .shape--6 {
-  top: 80kv;
+  top: 80vh;
   left: 5vw;
 }
 
 .shape--7 {
-  top: 80kv;
+  top: 80vh;
   left: 50vw;
 }
 
 .shape--8 {
-  top: 80kv;
+  top: 80vh;
   left: 80vw;
 }
